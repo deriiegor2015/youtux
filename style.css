@@ -1,8 +1,10 @@
+/* Загальні стилі */
 body {
   font-family: Arial, sans-serif;
   background: #f9f9f9;
   margin: 0;
   padding: 0;
+  color: #333;
 }
 
 header {
@@ -12,27 +14,97 @@ header {
   text-align: center;
 }
 
-.logo {
-  height: 50px;
+header h1 {
+  margin: 0;
 }
 
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Основний контейнер */
 main {
   padding: 20px;
   text-align: center;
 }
 
+/* Форми */
+form {
+  margin: 20px auto;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input, textarea, button {
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+button {
+  background: #ff0000;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #cc0000;
+}
+
+/* Відео */
 video {
   width: 80%;
   border: 2px solid #ccc;
   border-radius: 8px;
+  margin: 20px 0;
 }
 
-button {
-  margin-top: 10px;
-  padding: 10px 20px;
-  background: #ff0000;
-  color: white;
-  border: none;
+/* Спільнота */
+#posts {
+  margin-top: 20px;
+  text-align: left;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#posts p {
+  background: #fff;
+  padding: 10px;
   border-radius: 5px;
-  cursor: pointer;
+  margin-bottom: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
 }
